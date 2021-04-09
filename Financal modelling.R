@@ -1,0 +1,7 @@
+x<-c(5,7,10,12,15)
+y<-c(20,25,30,40,60)
+dummy<-data.frame(x=x,y=y)
+fm<-lm(y~x,data=dummy)
+summary(fm)
+attach(dummy)
+lrf<-lowess(x,y)
