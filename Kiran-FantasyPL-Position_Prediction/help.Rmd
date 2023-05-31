@@ -1,0 +1,39 @@
+---
+title: "Untitled"
+author: "Kiran"
+date: "2022-10-23"
+output: html_document
+---
+
+## Introduction
+This a predictive analytics dashboard developed using R. 
+This is the second tab of the dashboard that contains 
+the Help Page and the documentation of the shiny app. 
+The app consists of data visualization using the the R
+ggplot2 package and the predictive model.
+
+## Data
+The data used for this project has been retrieved from the
+Fantasy Premier League API for the 2018/19 season. The retrieval was made possible
+by the fplscrapR. The following features are extracted from the data and used in the modelling exercise:
+  a) minutes played
+  b) fouls conceded
+  c) error leading to goals
+  d) threat(on goals)
+  f) goals scored
+  g) creativity
+  f) clearances, blocks, interceptions (CBI),
+  g) assists
+  f) dribbles
+  g) offsides
+  h) key passes
+
+## Predictive Model
+The predictive model is a machine learning learning model 
+used to work out positions played by the English Premier League players.
+Specifically the machine learning model used in this exercise is a classification
+model referred to as the K-Nearest Neighbours Model. 
+
+## Addendum
+The two new plots activate when you select one of the options on the radio button. Otherwise in their default state they return the red message shown in the right bottom corner. I have included this for completeness. Seems it's a bug deeply nested in the reactive source code of shiny, that's what I have seen after reading the shiny documentation
+

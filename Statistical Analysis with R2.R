@@ -19,6 +19,10 @@ ggplot(Cars93, aes(x=Horsepower))+
   geom_histogram(color="black", fill="red",binwidth = 10)+
   facet_wrap(~Origin)
 
+ggplot(Cars93, aes(y=Horsepower))+
+  geom_boxplot()+
+  facet_wrap(~Origin)
+
 # Trimmed mean, dealing with outliers.
 with(Cars93, mean(Horsepower[Origin == "USA"], trim = .05))
 
